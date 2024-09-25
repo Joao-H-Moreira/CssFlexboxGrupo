@@ -8,6 +8,9 @@
 html{
     height: 500vh;
     background-color: #ffffff;
+    background-image: url('https://backiee.com/static/wallpapers/1000x563/361709.jpg');
+    background-repeat: no-repeat;
+    width: 500rem;
 }
 
 .container{
@@ -68,12 +71,13 @@ header ul li a{
     transition: .2s;
 }
 
+
+
 .banner{
     height: 100vh;
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
