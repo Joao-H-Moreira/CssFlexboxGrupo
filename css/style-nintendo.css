@@ -8,6 +8,9 @@
 html{
     height: 500vh;
     background-color: #ffffff;
+    background-image: url(https://www.hardware.com.br/wp-content/uploads/static/wp/2022/07/07/H2x1_NintendoLogo_Red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{

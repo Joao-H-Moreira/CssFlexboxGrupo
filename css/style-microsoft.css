@@ -8,6 +8,9 @@
 html{
     height: 500vh;
     background-color: #ffffff;
+    background-image: url('https://wallpapers.com/images/hd/xbox-one-logo-3asj79wuniuhnsya.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{
@@ -36,7 +39,7 @@ header.rolagem{
 }
 
 header.rolagem a, header.rolagem i{
-    color: #ff2f00;
+    color: #0e5b00;
 }
 
 header i{
@@ -70,7 +73,6 @@ header ul li a{
 
 .banner{
     height: 100vh;
-    background-image: url(imagens/microsoft/banner.jpg);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;

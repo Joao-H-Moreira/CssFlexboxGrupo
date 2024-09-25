@@ -65,10 +65,16 @@ header ul li a{
     width: 120px;
     height: 40px;
     border: 0;
-    background-color: #ff2f00;
+    background-color:  rgb(177, 0, 177);;
     color: #fff;
     cursor: pointer;
-    transition: .2s;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.btn-contato button:hover{
+    background-color: rgb(83, 166, 255);
+    transition: 1s;
 }
 
 
@@ -85,8 +91,9 @@ header ul li a{
 
 .banner h1{
     font-size: 4em;
+    color: rgb(177, 0, 177);
 }
 
 .banner h1 span{
-    color: #FFAE81;
+    color: rgb(83, 166, 255);
 }
