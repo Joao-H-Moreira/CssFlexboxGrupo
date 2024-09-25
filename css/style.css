@@ -10,7 +10,7 @@ html{
     background-color: #ffffff;
     background-image: url('https://backiee.com/static/wallpapers/1000x563/361709.jpg');
     background-repeat: no-repeat;
-    width: 500rem;
+    background-size: contain;
 }
 
 .container{

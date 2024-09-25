@@ -70,7 +70,7 @@ header ul li a{
 
 .banner{
     height: 100vh;
-    background-image: url(imagens/sony/sony-banner.png);
+    background-image: url(../imagens/sony/banner.png);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
