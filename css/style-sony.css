@@ -8,6 +8,9 @@
 html{
     height: 500vh;
     background-color: #ffffff;
+    background-image: url('https://wallpapers.com/images/hd/smoky-blue-sony-playstation-luas32839unbzav4.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{
@@ -71,6 +74,7 @@ header ul li a{
 .banner{
     height: 100vh;
     background-position: 100% 0;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F619807967456534947%2F&psig=AOvVaw0Gol8SO3eULXYu8bLGESIr&ust=1727391140084000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjPr8yX34gDFQAAAAAdAAAAABAe');
     background-repeat: no-repeat;
     background-size: cover;
 
