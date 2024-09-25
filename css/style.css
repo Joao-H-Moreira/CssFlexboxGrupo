@@ -26,11 +26,12 @@ html{
 
 header{
     width: 100%;
-    padding: 60px 4%;
+    padding: 20px 4%;
     position: fixed;
     top: 0;
     left: 0;
     transition: .5s;
+    background-color: rgba(0, 0, 0, 0.573);
 }
 
 header.rolagem{
@@ -39,7 +40,7 @@ header.rolagem{
 }
 
 header.rolagem a, header.rolagem i{
-    color: #ff2f00;
+    color: rgb(83, 166, 255);
 }
 
 header i{
@@ -59,6 +60,10 @@ header ul li{
 header ul li a{
     color: #ee00ff;
     text-decoration: none;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+
 }
 
 .btn-contato button{
@@ -90,10 +95,71 @@ header ul li a{
 }
 
 .banner h1{
-    font-size: 4em;
+    font-size: 6em;
     color: rgb(177, 0, 177);
+    font-family: monospace;
+
 }
 
 .banner h1 span{
     color: rgb(83, 166, 255);
+    font-family: monospace;
 }
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Necessário para o SVG */
+    overflow: hidden; /* Evita que o SVG transborde */
+    transition: transform 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative; /* Garante que o texto fique sobre o SVG */
+    z-index: 1;
+}
+
+.card p {
+    font-size: 1em;
+    color: #000000;
+    position: relative; /* Garante que o texto fique sobre o SVG */
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para o SVG */
+.card-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card rect {
+    fill: none;
+    stroke: #fb6066; /* Cor inicial do contorno */
+    stroke-width: 2;
+    stroke-dasharray: 890, 0;
+    transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
+}
+
+.card:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: url(#gradient); /* Aplica o gradiente no hover */
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+

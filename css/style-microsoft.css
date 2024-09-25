@@ -50,15 +50,17 @@ header i{
 header ul{
     list-style-type: none;
 }
-
 header ul li{
     display: inline-block;
     margin: 0 40px;
 }
 
 header ul li a{
-    color: #fff;
+    color: #0e5b00;
     text-decoration: none;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .btn-contato button{
