@@ -28,7 +28,6 @@ header{
     top: 0;
     left: 0;
     transition: .5s;
-    background-color: rgba(0, 0, 0, 0.573);
 }
 
 header.rolagem{
@@ -82,6 +81,7 @@ header ul li a{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('https://wallpapers.com/images/hd/xbox-one-logo-3asj79wuniuhnsya.webp');
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,16 +113,39 @@ header ul li a{
     justify-content: space-evenly;
     margin-top: 20px;
 }
+
 .consoles article{
     width: 30%;
+    height: 370px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    border: 1px solid rgb(47, 53, 252);
+    border-radius: 10px 10px 0px 0px;
 }
 .consoles article img{
     width: 100%;
     height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.consoles article button{
+    width: 30%;
+    margin: auto;
+    height: 25px;
+    
+    cursor: pointer;
+
+    background-color: #0202ce;
+    color: white;
+    font-weight: bold;
+    
+    border-radius: 5px;
+    border: 1.5px solid rgb(4, 4, 137);
+    transition: 1s;
+}
+.consoles article button:hover{
+    box-shadow: 0px 0px 20px blue;
 }
 
 .textos-console{
@@ -135,6 +158,11 @@ header ul li a{
 
 .textos-console h2{
     border-bottom: 1px solid grey;
+}
+.textos-console h4{
+    font-size: 12px;
+    color: rgb(151, 151, 151);
+    margin-top: 10px
 }
 
 .textos-console p{

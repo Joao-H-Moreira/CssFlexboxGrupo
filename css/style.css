@@ -38,7 +38,7 @@ header{
     top: 0;
     left: 0;
     /* transition: .5s; */
-    background-color: rgba(0, 0, 0, 0);
+    
 }
 
 /* header.rolagem{
@@ -119,19 +119,20 @@ header ul li a:hover{
 
 .container2 {
     display: flex;
-    justify-content: space-around; /* Espaço entre os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte, se necessário */
-    gap: 10px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento uniforme entre os cards */
+    flex-wrap: nowrap; /* Impede que os cards quebrem para a linha seguinte */
+    padding: 10px; /* Adiciona espaçamento interno ao contêiner */
 }
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Alinha o conteúdo na vertical */
     align-items: center;
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Tamanho fixo para garantir que todos os cards tenham a mesma largura */
+    width: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma largura */
     height: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma altura */
     padding: 20px;
     text-align: center;
@@ -142,9 +143,9 @@ header ul li a:hover{
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    max-height: 150px; /* Limita a altura da imagem */
+    width: 130px; /* Largura fixa */
+    height: 130px; /* Altura fixa */
+    border-radius: 10px;
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
 }
 
@@ -168,6 +169,9 @@ header ul li a:hover{
     transform: scale(1.05);
 }
 
+.playstation{
+    margin-left: -80px
+}
 
 .xbox{
     width: 130px;

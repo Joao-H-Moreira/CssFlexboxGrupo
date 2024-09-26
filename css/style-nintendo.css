@@ -68,6 +68,7 @@ header ul li a{
     background-color: #ffffff;
     color: red;
     cursor: pointer;
+    border-radius: 10px;
     transition: .2s;
 }
 
