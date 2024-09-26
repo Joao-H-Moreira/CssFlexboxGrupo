@@ -121,7 +121,7 @@ header ul li a:hover{
     display: flex;
     justify-content: center; /* Centraliza os cards */
     gap: 20px; /* Espaçamento uniforme entre os cards */
-    flex-wrap: nowrap; /* Impede que os cards quebrem para a linha seguinte */
+    flex-wrap: nowrap; /* Evita que os cards quebrem para a linha seguinte */
     padding: 10px; /* Adiciona espaçamento interno ao contêiner */
 }
 
@@ -135,11 +135,13 @@ header ul li a:hover{
     width: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma largura */
     height: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma altura */
     padding: 20px;
+    margin: 0; /* Remove margens extras */
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
     font-family: monospace;
+    box-sizing: border-box; /* Garante que padding seja contabilizado dentro do tamanho total */
 }
 
 .card img {
@@ -147,11 +149,12 @@ header ul li a:hover{
     height: 130px; /* Altura fixa */
     border-radius: 10px;
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
 }
 
 .card h2 {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0; /* Remove margens extras e adiciona margem inferior */
     position: relative;
     z-index: 1;
     font-family: monospace;
@@ -160,6 +163,7 @@ header ul li a:hover{
 .card p {
     font-size: 0.9em;
     color: #000000;
+    margin: 0; /* Remove margens extras */
     position: relative;
     z-index: 1;
     font-family: monospace;
@@ -169,27 +173,34 @@ header ul li a:hover{
     transform: scale(1.05);
 }
 
-.playstation{
-    margin-left: -80px
-}
 
-.xbox{
-    width: 130px;
-    height: 130px;
+.xbox {
+    width: 130px; /* Definindo largura uniforme */
+    height: 130px; /* Definindo altura uniforme */
     border-radius: 10px;
 }
 
-.nintendo{
-    width: 130px;
-    height: 500px;
+.nintendo {
+    width: 130px; /* Alterando para a mesma largura */
+    height: 130px; /* Alterando para a mesma altura */
     border-radius: 10px;
 }
 
-.sony{
-    width: 130px;
-    height: 130px;
+.sony {
+    width: 130px; /* Mantendo largura uniforme */
+    height: 130px; /* Mantendo altura uniforme */
     border-radius: 10px;
 }
+
+/* Para garantir que todas as imagens sejam exibidas corretamente */
+.card img {
+    width: 320px; /* Largura fixa para todas as imagens */
+    height: 130px; /* Altura fixa para todas as imagens */
+    border-radius: 10px; /* Borda arredondada para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
 
 /* Estilos para o SVG */
 .card-svg {
@@ -202,7 +213,7 @@ header ul li a:hover{
 
 .card rect {
     fill: none;
-    stroke: #fb6066; /* Cor inicial do contorno */
+    stroke: #000000; /* Cor inicial do contorno */
     stroke-width: 2;
     stroke-dasharray: 890, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
