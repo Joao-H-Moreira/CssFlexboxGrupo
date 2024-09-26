@@ -211,6 +211,7 @@ header ul li a:hover{
     height: 100%;
 }
 
+
 .card rect {
     fill: none;
     stroke: #000000; /* Cor inicial do contorno */
@@ -226,4 +227,39 @@ header ul li a:hover{
     stroke: url(#gradient); /* Aplica o gradiente no hover */
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
+.card {
+    /* outras propriedades */
+}
+
+.card-xbox rect {
+    stroke: url(#gradient-xbox);
+}
+
+.card-nintendo rect {
+    stroke: url(#gradient-nintendo);
+}
+
+.card-sony rect {
+    stroke: url(#gradient-sony);
+}
+
+/* Defina os gradientes específicos para cada card */
+.card-xbox:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+}
+
+.card-nintendo:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+}
+
+.card-sony:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+}
+
 
