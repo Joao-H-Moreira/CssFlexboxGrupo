@@ -6,9 +6,8 @@
 }
 
 html{
-    height: 500vh;
+    height: 200vh;
     background-color: #ffffff;
-    background-image: url('https://backiee.com/static/wallpapers/1000x563/361709.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -16,6 +15,14 @@ html{
 .container{
     max-width: 1280px;
     margin: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .flex{
@@ -34,14 +41,14 @@ header{
     background-color: rgba(0, 0, 0, 0.573);
 }
 
-header.rolagem{
+/* header.rolagem{
     background-color: #fff;
     padding: 20px 4%;
-}
+} */
 
-header.rolagem a, header.rolagem i{
+/* header.rolagem a, header.rolagem i{
     color: rgb(83, 166, 255);
-}
+} */
 
 header i{
     font-size: 30px;
@@ -63,7 +70,12 @@ header ul li a{
     font-family: monospace;
     font-size: 30px;
     font-weight: bold;
+    transition: 1s
+}
 
+header ul li a:hover{
+    color: rgb(83, 166, 255);
+    transition: 1s;
 }
 
 .btn-contato button{
@@ -82,10 +94,9 @@ header ul li a{
     transition: 1s;
 }
 
-
-
 .banner{
     height: 100vh;
+    background-image: url('https://backiee.com/static/wallpapers/1000x563/361709.jpg');
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,14 +121,16 @@ header ul li a{
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 350px;
     padding: 20px;
     text-align: center;
     position: relative; /* Necessário para o SVG */
     overflow: hidden; /* Evita que o SVG transborde */
     transition: transform 0.3s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: monospace;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .card h2 {
@@ -125,6 +138,7 @@ header ul li a{
     margin-bottom: 10px;
     position: relative; /* Garante que o texto fique sobre o SVG */
     z-index: 1;
+    font-family: monospace;
 }
 
 .card p {
@@ -132,10 +146,29 @@ header ul li a{
     color: #000000;
     position: relative; /* Garante que o texto fique sobre o SVG */
     z-index: 1;
+    font-family: monospace;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.xbox{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.nintendo{
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.sony{
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
 }
 
 /* Estilos para o SVG */

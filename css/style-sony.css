@@ -6,11 +6,8 @@
 }
 
 html{
-    height: 500vh;
-    background-color: #ffffff;
-    background-image: url('https://wallpapers.com/images/high/playstation-4k-zxcmogzk61tb2ywq.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 200vh;
+    background-color: #FFF;
 }
 
 .container{
@@ -76,6 +73,7 @@ header ul li a{
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url('https://wallpapers.com/images/high/playstation-4k-zxcmogzk61tb2ywq.webp');
 
     display: flex;
     align-items: center;
@@ -89,4 +87,48 @@ header ul li a{
 
 .banner h1 span{
     color: #030397;
+}
+
+.container-body{
+    width: 80%;
+    margin: auto;
+}
+
+.container-body h1{
+    color: #0202ce;
+    margin-top: 30px;
+}
+
+.consoles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.consoles article{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.consoles article img{
+    width: 100%;
+    height: 180px;
+}
+
+.textos-console{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.textos-console h2{
+    border-bottom: 1px solid grey;
+}
+
+.textos-console p{
+    margin-top: 20px;
+    font-size: 17px;
 }
