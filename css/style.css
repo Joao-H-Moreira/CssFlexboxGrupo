@@ -34,21 +34,21 @@ html{
 header{
     width: 100%;
     padding: 20px 4%;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
-    /* transition: .5s; */
+    transition: .5s;
     
 }
 
-/* header.rolagem{
+header.rolagem{
     background-color: #fff;
     padding: 20px 4%;
-} */
+}
 
-/* header.rolagem a, header.rolagem i{
+header.rolagem a, header.rolagem i{
     color: rgb(83, 166, 255);
-} */
+}
 
 header i{
     font-size: 30px;
@@ -119,42 +119,42 @@ header ul li a:hover{
 
 .container2 {
     display: flex;
-    justify-content: center; /* Centraliza os cards */
-    gap: 20px; /* Espaçamento uniforme entre os cards */
-    flex-wrap: nowrap; /* Evita que os cards quebrem para a linha seguinte */
-    padding: 10px; /* Adiciona espaçamento interno ao contêiner */
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    padding: 10px; 
 }
 
 .card {
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo na vertical */
+    flex-direction: column; 
     align-items: center;
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma largura */
-    height: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma altura */
+    width: 350px;
+    height: 350px; 
     padding: 20px;
-    margin: 0; /* Remove margens extras */
+    margin: 0; 
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
     font-family: monospace;
-    box-sizing: border-box; /* Garante que padding seja contabilizado dentro do tamanho total */
+    box-sizing: border-box;
 }
 
 .card img {
-    width: 130px; /* Largura fixa */
-    height: 130px; /* Altura fixa */
+    width: 130px; 
+    height: 130px; 
     border-radius: 10px;
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    object-fit: cover; 
+    margin-bottom: 10px;
 }
 
 .card h2 {
     font-size: 1.2em;
-    margin: 0 0 10px 0; /* Remove margens extras e adiciona margem inferior */
+    margin: 0 0 10px 0; 
     position: relative;
     z-index: 1;
     font-family: monospace;
@@ -163,7 +163,7 @@ header ul li a:hover{
 .card p {
     font-size: 0.9em;
     color: #000000;
-    margin: 0; /* Remove margens extras */
+    margin: 0; 
     position: relative;
     z-index: 1;
     font-family: monospace;
@@ -175,32 +175,30 @@ header ul li a:hover{
 
 
 .xbox {
-    width: 130px; /* Definindo largura uniforme */
-    height: 130px; /* Definindo altura uniforme */
+    width: 130px; 
+    height: 130px; 
     border-radius: 10px;
 }
 
 .nintendo {
-    width: 130px; /* Alterando para a mesma largura */
-    height: 130px; /* Alterando para a mesma altura */
+    width: 130px; 
+    height: 130px; 
     border-radius: 10px;
 }
 
 .sony {
-    width: 130px; /* Mantendo largura uniforme */
-    height: 130px; /* Mantendo altura uniforme */
+    width: 130px;
+    height: 130px; 
     border-radius: 10px;
 }
 
-/* Para garantir que todas as imagens sejam exibidas corretamente */
 .card img {
-    width: 320px; /* Largura fixa para todas as imagens */
-    height: 130px; /* Altura fixa para todas as imagens */
-    border-radius: 10px; /* Borda arredondada para todas as imagens */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    width: 320px;
+    height: 130px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
 }
-
 
 /* Estilos para o SVG */
 .card-svg {
@@ -211,55 +209,43 @@ header ul li a:hover{
     height: 100%;
 }
 
-
 .card rect {
     fill: none;
-    stroke: #000000; /* Cor inicial do contorno */
+    stroke: #000000; 
     stroke-width: 2;
     stroke-dasharray: 890, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
 }
 
-.card:hover rect {
-    stroke-width: 5;
-    stroke-dasharray: 200, 300;
-    stroke-dashoffset: 38;
-    stroke: url(#gradient); /* Aplica o gradiente no hover */
-    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
-}
-.card {
-    /* outras propriedades */
-}
-
-.card-xbox rect {
-    stroke: url(#gradient-xbox);
-}
-
-.card-nintendo rect {
-    stroke: url(#gradient-nintendo);
-}
-
-.card-sony rect {
-    stroke: url(#gradient-sony);
-}
-
-/* Defina os gradientes específicos para cada card */
+/* Gradiente no hover para Microsoft */
 .card-xbox:hover rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
+    stroke: url(#gradient-xbox); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
+/* Gradiente no hover para Nintendo */
 .card-nintendo:hover rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
+    stroke: url(#gradient-nintendo); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
+/* Gradiente no hover para Sony */
 .card-sony:hover rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
+    stroke: url(#gradient-sony); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
+
+
+
+
 
 
