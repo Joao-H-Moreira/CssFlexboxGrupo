@@ -6,7 +6,7 @@
 }
 
 html{
-    height: 200vh;
+    height: 170vh;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: contain;
@@ -31,15 +31,16 @@ html{
     justify-content: space-between;
 }
 
-header{
+header {
     width: 100%;
     padding: 20px 4%;
-    position: fixed;
+    position: fixed; /* Mantém o header fixo durante o scroll */
     top: 0;
     left: 0;
+    z-index: 1000; /* Define um z-index alto para garantir que o header fique acima dos cards */
     transition: .5s;
-    
 }
+
 
 header.rolagem{
     background-color: #fff;
@@ -103,6 +104,11 @@ header ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container-body{
+    width: 80%;
+    margin: auto;
 }
 
 .banner h1{
@@ -244,8 +250,117 @@ header ul li a:hover{
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
+footer {
+    background-color: rgb(83, 166, 255);
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    bottom: 0; 
+    left: 0; 
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15px;
+}
+
+.menu_footer img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px; 
+}
 
 
+
+/* mobile */
+
+@media (max-width: 768px) {
+    html {
+        height: auto; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 2%; 
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    header ul li a {
+        font-size: 20px; 
+    }
+
+    .btn-contato button {
+        width: 100px; 
+        height: 35px; 
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .container2 {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; 
+        height: auto; 
+        padding: 15px; 
+        margin: 0; 
+    }
+
+    .card img {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .card h2 {
+        font-size: 1em; 
+    }
+
+    .card p {
+        font-size: 0.8em; 
+    }
+
+    .card-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        height: auto; 
+        padding: 10px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu_footer {
+        height: auto;
+        flex-direction: row;
+        padding: 5px 0;
+    }
+
+    .menu_footer img {
+        margin: 5px 0;
+    }
+
+}
 
 
 
