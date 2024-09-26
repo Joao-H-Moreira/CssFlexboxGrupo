@@ -34,11 +34,11 @@ html{
 header{
     width: 100%;
     padding: 20px 4%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0.573);
+    /* transition: .5s; */
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* header.rolagem{
@@ -117,34 +117,49 @@ header ul li a:hover{
     font-family: monospace;
 }
 
+.container2 {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte, se necessário */
+    gap: 10px; /* Espaçamento entre os cards */
+}
+
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    height: 350px;
+    width: 300px; /* Tamanho fixo para garantir que todos os cards tenham a mesma largura */
+    height: 350px; /* Tamanho fixo para garantir que todos os cards tenham a mesma altura */
     padding: 20px;
     text-align: center;
-    position: relative; /* Necessário para o SVG */
-    overflow: hidden; /* Evita que o SVG transborde */
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease;
     font-family: monospace;
-    margin-left: 10px;
-    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limita a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
 }
 
 .card h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
-    position: relative; /* Garante que o texto fique sobre o SVG */
+    position: relative;
     z-index: 1;
     font-family: monospace;
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #000000;
-    position: relative; /* Garante que o texto fique sobre o SVG */
+    position: relative;
     z-index: 1;
     font-family: monospace;
 }
@@ -153,6 +168,7 @@ header ul li a:hover{
     transform: scale(1.05);
 }
 
+
 .xbox{
     width: 130px;
     height: 130px;
@@ -160,13 +176,13 @@ header ul li a:hover{
 }
 
 .nintendo{
-    width: 230px;
-    height: 130px;
+    width: 130px;
+    height: 500px;
     border-radius: 10px;
 }
 
 .sony{
-    width: 200px;
+    width: 130px;
     height: 130px;
     border-radius: 10px;
 }
